@@ -1,6 +1,5 @@
-import re
-
-txt = input()
+txt = str(input())
 result = re.findall('[A-Z][a-z]*', txt)
 for i in result:
-    print(i, end = " ")
+    x = i.lower()
+    print(x, end="_")
